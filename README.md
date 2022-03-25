@@ -37,6 +37,10 @@ w806为[联盛德](http://www.winnermicro.com/)公司推出一款基于平头哥
 2、在附加开发板管理器网址输入如下网址：
 
 > https://cdn.jsdelivr.net/gh/Hi-LinkDuino/w80x_arduino/package_w80x_proxy_index.json
+>
+> **如果这个不行请使用这个链接地址**
+
+> https://cdn.jsdelivr.net/gh/Hi-LinkDuino/w80x_arduino/package_w80x_index.json
 
 ![](./doc/option_zh.png)
 
@@ -57,10 +61,10 @@ w806为[联盛德](http://www.winnermicro.com/)公司推出一款基于平头哥
 打勾的代表已经实现并验证，没有打勾的代表正在开发中，期待更多开发者一起维护
 
 - [x] [支持arduino ide开发基于w806的官方SDK API调用开发](https://github.com/Hi-LinkDuino/w80x_arduino/tree/v0.0.1)
-- [ ] [GPIO适配]()
+- [x] [GPIO适配](https://github.com/Hi-LinkDuino/w80x_arduino/commit/53fb7892e041c1e37913b0c73fd1abaf5970a111)
 - [ ] [Serial适配]()
-- [ ] [ADC适配]()
-- [ ] [PWM适配]()
+- [x] [ADC适配](https://github.com/Hi-LinkDuino/w80x_arduino/pull/10)
+- [x] [PWM适配](https://github.com/Hi-LinkDuino/w80x_arduino/commit/8de553ff1431182d11d7fec1267ff2efeb1d84c9)
 - [ ] [timer适配]()
 - [ ] [I2C适配]()
 - [ ] [SPI适配]()

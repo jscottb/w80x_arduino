@@ -56,6 +56,10 @@ void yield(void);
 #define INPUT_PULLUP 0x2
 #define OUTPUT_OD 0x03
 #define INPUT_PULLDOWN 0x4
+#define ANALOG_INPUT 0x5
+#define PWM_OUT 0x6
+
+#define PIN_IDLE 0xff
 
 // undefine mathlib's pi if encountered
 #ifdef PI
@@ -154,8 +158,14 @@ void pinMode(uint8_t pin, uint8_t mode);
 void digitalWrite(uint8_t pin, uint8_t val);
 
 uint8_t digitalRead(uint8_t pin);
-//void analogWrite(uint8_t pin, __xdata uint16_t val);
 
+#define ADC8BIT		0x01
+#define ADC16BIT	0x02
+
+void analogReadResolution(uint8_t);
+int analogRead(uint8_t pin);
+
+void analogWrite(uint32_t pin, uint32_t val);
 //uint32_t millis(void);
 //uint32_t micros(void);
 //void delay(uint32_t ms);
